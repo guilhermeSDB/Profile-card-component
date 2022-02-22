@@ -31,8 +31,8 @@ body{
 
         div.card__profile{
             margin: 0 auto;
-            width: 25vw;
-            height: 50vh;            
+            width: 25rem;
+            height: 25rem;            
             border-radius: 20px;
             background-color: white;
             overflow: hidden;
@@ -41,49 +41,70 @@ body{
             flex-direction: column;
             justify-content: flex-start;
 
-            div.card__bg{
-                background-image: url(../images/bg-pattern-card.svg);
-                width: 100%;
-                height: 40%;
-            }
+            @media (max-width: 435px){ width: 80%; height: 45%;   }
 
-            div.card_profile-status{
+           
+            div.card_profile-status{    
 
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;                
+                align-items: center;        
+                position: relative;
+                bottom: 10%;  
                 
 
                 img.profile_img{
-                    bottom: 20%;
                     width: 100px;
                     border-radius: 100%;
-                    position: relative;
                     border: 8px solid white;
+                }
+
+                p.profile_name{
+                    font-weight: 700;
+
+                    span{
+                        color: $DarkGray;
+                        font-weight: 300;
+                    }
+                }
+
+                p.city{
+                    color: $DarkGray;
+                    margin: .7rem 0;
                 }
 
             }
 
-            
+            hr{
+                width: 100%;
+                height: .25px;
+                background-color: $DarkGray;
+            }
 
             div.card__social-status{
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
-                margin: 1rem 0 ;
+                margin: 2rem 0 ;
+                position: relative;
+                bottom: 10%;
 
                 div{
+                    color: $VDDesaturatedBlue;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
                     font-weight: 300;
-                    font-size: .8rem;
+                    font-size: .7rem;
+                    letter-spacing: 1px;
 
                     p.social_title{       
-                        font-size: 1.5rem;             
+                        font-size: 1.2rem;             
                         font-weight: 700;
+                        margin: .4rem 0;
+                        letter-spacing: 1px;
                     }
 
                 }

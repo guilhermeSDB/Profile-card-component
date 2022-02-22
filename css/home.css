@@ -78,8 +78,8 @@ body main {
 }
 body main div.card__profile {
   margin: 0 auto;
-  width: 25vw;
-  height: 50vh;
+  width: 25rem;
+  height: 25rem;
   border-radius: 20px;
   background-color: white;
   overflow: hidden;
@@ -88,39 +88,62 @@ body main div.card__profile {
   flex-direction: column;
   justify-content: flex-start;
 }
-body main div.card__profile div.card__bg {
-  background-image: url(../images/bg-pattern-card.svg);
-  width: 100%;
-  height: 40%;
+@media (max-width: 435px) {
+  body main div.card__profile {
+    width: 80%;
+    height: 45%;
+  }
 }
 body main div.card__profile div.card_profile-status {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  bottom: 10%;
 }
 body main div.card__profile div.card_profile-status img.profile_img {
-  bottom: 20%;
   width: 100px;
   border-radius: 100%;
-  position: relative;
   border: 8px solid white;
+}
+body main div.card__profile div.card_profile-status p.profile_name {
+  font-weight: 700;
+}
+body main div.card__profile div.card_profile-status p.profile_name span {
+  color: #969696;
+  font-weight: 300;
+}
+body main div.card__profile div.card_profile-status p.city {
+  color: #969696;
+  margin: 0.7rem 0;
+}
+body main div.card__profile hr {
+  width: 100%;
+  height: 0.25px;
+  background-color: #969696;
 }
 body main div.card__profile div.card__social-status {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 1rem 0;
+  margin: 2rem 0;
+  position: relative;
+  bottom: 10%;
 }
 body main div.card__profile div.card__social-status div {
+  color: #2d3248;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
 }
 body main div.card__profile div.card__social-status div p.social_title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
+  margin: 0.4rem 0;
+  letter-spacing: 1px;
 }
