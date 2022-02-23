@@ -153,3 +153,7 @@ body main div.card__profile div.card__social-status div p.social_title {
   margin: 0.4rem 0;
   letter-spacing: 1px;
 }
+body main div.attribution {
+  position: absolute;
+  bottom: 0;
+}
