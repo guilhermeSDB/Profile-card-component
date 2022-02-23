@@ -90,8 +90,14 @@ body main div.card__profile {
 }
 @media (max-width: 435px) {
   body main div.card__profile {
-    width: 80%;
-    height: 45%;
+    width: 20rem;
+    height: 25rem;
+  }
+}
+@media (max-width: 300px) {
+  body main div.card__profile {
+    width: 15rem;
+    height: 23rem;
   }
 }
 body main div.card__profile div.card_profile-status {

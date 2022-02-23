@@ -41,7 +41,9 @@ body{
             flex-direction: column;
             justify-content: flex-start;
 
-            @media (max-width: 435px){ width: 80%; height: 45%;   }
+            @media (max-width: 435px){ width: 20rem; height: 25rem;   }
+
+            @media (max-width: 300px){ width: 15rem; height: 23rem;   }
 
            
             div.card_profile-status{    
